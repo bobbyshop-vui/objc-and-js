@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Server Cocoa & JS</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // Gọi API server Cocoa
+    fetch('http://localhost:8080/ui')
+      .then(response => response.json())
+      .then(data => {
+        if (data.type === 'button') {
+          const button = document.createElement('button');
+          button.textContent = data.label;
+          button.onclick = () => alert(data.action);
+          document.getElementById('app').appendChild(button);
+        }
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+</body>
+</html>
+

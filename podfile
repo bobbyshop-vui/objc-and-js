@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :osx, '10.15'
+
+target 'objcjs' do
+  use_frameworks! use_frameworks! :linkage => :static
+
+  # Cài GCDWebServer từ GitHub
+  pod 'GCDWebServer', :git => 
+'https://github.com/swisspol/GCDWebServer.git'
+end
+

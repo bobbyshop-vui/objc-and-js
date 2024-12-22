@@ -1,0 +1,23 @@
+PODS:
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+
+DEPENDENCIES:
+  - GCDWebServer (from `https://github.com/swisspol/GCDWebServer.git`)
+
+EXTERNAL SOURCES:
+  GCDWebServer:
+    :git: https://github.com/swisspol/GCDWebServer.git
+
+CHECKOUT OPTIONS:
+  GCDWebServer:
+    :commit: c6d118f4ecc1d9c2c6130fe8522b50889e78524b
+    :git: https://github.com/swisspol/GCDWebServer.git
+
+SPEC CHECKSUMS:
+  GCDWebServer: f5590602d75d912fb63660e57c4939d57b8fe85b
+
+PODFILE CHECKSUM: 4da2b7365979fa78590f1a9ca2af4615a3d1dd4c
+
+COCOAPODS: 1.15.2
